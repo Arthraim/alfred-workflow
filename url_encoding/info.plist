@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.arthraim.alfred2.url</string>
+	<key>connections</key>
+	<dict>
+		<key>703B65EB-7EA7-40D9-8860-4BA3D2CF48A9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8853D136-935E-419E-AC9D-7AA517FB64A5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>77FC6966-8E59-4F34-AFD4-F2D7D0014252</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>AA6E0037-6E59-499D-ABE1-8C5BC0BC48B4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8853D136-935E-419E-AC9D-7AA517FB64A5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>77FC6966-8E59-4F34-AFD4-F2D7D0014252</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Arthur Wang</string>
+	<key>description</key>
+	<string>urlencode or decode a string</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>URL encoding</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>urlde</string>
+				<key>script</key>
+				<string>python url.py de '{query}'</string>
+				<key>subtext</key>
+				<string>decode {query}</string>
+				<key>title</key>
+				<string>URL decode</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>AA6E0037-6E59-499D-ABE1-8C5BC0BC48B4</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Copied to Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>77FC6966-8E59-4F34-AFD4-F2D7D0014252</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>urlen</string>
+				<key>script</key>
+				<string>python url.py en '{query}'</string>
+				<key>subtext</key>
+				<string>encode {query}</string>
+				<key>title</key>
+				<string>URL encode</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>703B65EB-7EA7-40D9-8860-4BA3D2CF48A9</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>8853D136-935E-419E-AC9D-7AA517FB64A5</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Copyright (c) 2013 Arthur Wang. All rights reserved.</string>
+	<key>uidata</key>
+	<dict>
+		<key>703B65EB-7EA7-40D9-8860-4BA3D2CF48A9</key>
+		<dict>
+			<key>ypos</key>
+			<real>30</real>
+		</dict>
+		<key>77FC6966-8E59-4F34-AFD4-F2D7D0014252</key>
+		<dict>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
+		<key>8853D136-935E-419E-AC9D-7AA517FB64A5</key>
+		<dict>
+			<key>ypos</key>
+			<real>30</real>
+		</dict>
+		<key>AA6E0037-6E59-499D-ABE1-8C5BC0BC48B4</key>
+		<dict>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://artori.us</string>
+</dict>
+</plist>
